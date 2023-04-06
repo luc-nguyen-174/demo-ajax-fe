@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>List Smartphone</title>
@@ -10,19 +10,19 @@
     <table>
         <tr>
             <td>Producer:</td>
-            <td><input type="text" id="producer" placeholder="producer"></td>
+            <td><input type="text" id="producer" name="producer" placeholder="producer"></td>
         </tr>
         <tr>
             <td>Model:</td>
-            <td><input type="text" id="model" placeholder="model"></td>
+            <td><input type="text" id="model" name="model" placeholder="model"></td>
         </tr>
         <tr>
             <td>Price:</td>
-            <td><input type="text" id="price" placeholder="price"></td>
+            <td><input type="text" id="price" name="price" placeholder="price"></td>
         </tr>
         <tr>
             <td></td>
-            <td><input type="submit" value="Add" onclick="addNewSmartPhone()"></td>
+            <td><button type="submit"  onclick="createNewPhone()">Add</button></td>
         </tr>
     </table>
 </form>
@@ -34,11 +34,12 @@
         <td>Producer</td>
         <td>Model</td>
         <td>Price</td>
+        <td>Action</td>
     </tr>
     </thead>
     <tbody id="content">
     </tbody>
 </table>
-<script src="classes.js"></script>
+<script src="phones.js"></script>
 </body>
 </html>
